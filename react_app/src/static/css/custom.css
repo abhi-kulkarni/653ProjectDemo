@@ -136,46 +136,6 @@
 .col_2 .list-group-item{
     border-left: none !important;
 }
-/* PARALLAX EFFECT */
-
-.bgimg-1, .bgimg-2, .bgimg-3 {
-    position: relative;
-    opacity: 0.65;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  
-  }
-.bgimg-1 {
-    background-image: url("../images/carousel_1.jpg");
-    min-height: 100%;
-}
-
-.bgimg-2 {
-    background-image: url("../images/carousel_2.jpg");
-    min-height: 400px;
-}
-
-.bgimg-3 {
-    background-image: url("../images/carousel_3.jpg");
-    min-height: 400px;
-}
-
-.bgimg-1_shop {
-    background-image: url("../images/carousel_4.jpg");
-    min-height: 100%;
-}
-
-.bgimg-2_shop {
-    background-image: url("../images/carousel_1.jpg");
-    min-height: 400px;
-}
-
-.bgimg-3_shop {
-    background-image: url("../images/carousel_4.jpg");
-    min-height: 400px;
-}
 
 .caption {
     position: absolute;

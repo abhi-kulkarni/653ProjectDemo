@@ -144,7 +144,7 @@ const IndexPage = (props) => {
         </Col>
         <Col style={{ padding: '0px', margin: '0px' }} xs={4} sm={4} md={4} lg={4} xl={4}>
           <Button disabled={loading} onClick={() => train()} size="sm" variant="success">
-              Train <FaPlay style={{ marginLeft: '5px', marginBottom: '1px' }} />
+              Train <FaPlay style={{ fontSize: '12px', marginLeft: '5px', marginBottom: '1px' }} />
           </Button> 
         </Col>
         <Col style={{ padding: '0px', margin: '0px' }} xs={4} sm={4} md={4} lg={4} xl={4}>

@@ -9,11 +9,11 @@ function App() {
     <div className="App">
         <Header/>
           <div style={{ paddingTop: '93px' }}>
-          <Switch>
-            <Route exact path='/' component={IndexPage} />
-          </Switch>
+            <Switch>
+              <Route exact path='/' component={IndexPage} />
+            </Switch>
           </div>
-      <Footer/>
+        <Footer/>
     </div>
   );
 }

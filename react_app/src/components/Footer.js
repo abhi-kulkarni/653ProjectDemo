@@ -17,10 +17,10 @@ function Footer(props) {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link onClick={() => redirectPage('/')} style={{ fontSize: "0.8rem" }}>
+            {/* <Nav.Link onClick={() => redirectPage('/')} style={{ fontSize: "0.8rem" }}>
               <span>©</span>
               <span style={{ margin: '0px 5px 8px 8px' }}>2021 Copyright Adversarial Attacks</span>
-            </Nav.Link>
+            </Nav.Link> */}
           </Nav>
         </Navbar.Collapse>
       </Navbar>
