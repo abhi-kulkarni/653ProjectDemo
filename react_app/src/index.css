@@ -1,0 +1,586 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@media only screen and (min-width: 300px) {
+
+  .input_table{
+    padding-left: 25% !important;
+  }
+
+  .billing_address_check{
+    float: left;
+  }
+
+   .personal_info_col{
+    padding: '10px 20px 20px 0px' !important;
+  }
+
+  .billing_info_col{
+    padding: '0px 20px 20px 0px' !important; 
+  }
+
+  .phone_captcha_div{
+    margin: 10px 50px !important;
+  }
+
+  .phone_captcha_container{
+    display: none;
+  }
+
+  .captcha_div{
+    display: none;
+  }
+
+
+}
+
+@media only screen and (min-width: 600px) {
+
+  .input_table{
+    padding-left: 30% !important;
+  }
+
+  .personal_info_col{
+    padding: '10px 20px 0px 0px' !important;
+  }
+
+  .billing_info_col{
+    padding: '0px 20px 20px 0px' !important; 
+  }   
+
+  .phone_captcha_div{
+    margin: 10px 55px !important;
+  }
+
+  .phone_captcha_container{
+    display: block;
+  }
+
+  .captcha_div{
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+  .input_table{
+    padding-left: 36% !important;
+  }
+
+  .personal_info_col{
+    padding: '10px 20px 20px 0px' !important;
+  }
+
+  .billing_info_col{
+    padding: '0px 20px 20px 0px' !important; 
+  }
+
+  .phone_captcha_container{
+    display: block;
+  }
+
+  .phone_captcha_div{
+    margin: 10px 130px !important;
+  }
+
+  .captch_container{
+    height: 195px;
+  }
+
+  .captcha_div{
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+  .input_table{
+    padding-left: 36% !important;
+  }
+
+  .personal_info_col{
+    padding: '10px 20px 20px 0px' !important;
+  }
+
+  .billing_info_col{
+    padding: '0px 20px 20px 0px' !important; 
+  }
+
+  .phone_captcha_container{
+    display: none;
+  }
+
+  .captch_container{
+    height: 171px;
+  }
+
+  .captcha_div{
+    display: block;
+    padding: 42px 55px !important; 
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+  
+  .input_table{
+    padding-left: 0% !important;
+  }
+
+  .personal_info_col{
+    padding: '10px 20px 20px 0px' !important;
+  }
+
+  .billing_info_col{
+    padding: '0px 20px 20px 0px' !important; 
+  }
+
+  .phone_captcha_container{
+    display: none;
+  }
+
+  .captch_container{
+    height: '171px';
+  }
+
+  .captcha_div{
+    display: block;
+    padding: 42px 92px !important; 
+  }
+
+}
+
+.cursor_pointer {
+  cursor: pointer !important;
+}
+
+.error_message {
+  color: red;
+  font-size: 0.75em;
+  margin-top: 2px;
+}
+
+.user_created_message_login {
+  color: forestgreen;
+  font-size: 1em;
+}
+
+.reset_password_success_msg {
+  color: forestgreen !important;
+  font-size: 1em;
+}
+
+.profile_edit_success_msg {
+  color: forestgreen;
+  font-size: 0.85em;
+}
+
+.form_error_message {
+  color: red;
+  font-size: 0.85em;
+}
+
+.validate_email_message {
+  color: green;
+  font-size: 0.8em;
+}
+
+.sign_in_error_message {
+  color: red;
+  font-size: 0.8em;
+}
+
+.forgot_password{
+  color: #0879FA;
+  text-decoration: none;
+  font-size: 0.9rem;;
+}
+
+.signup_user_section_icon{
+  margin: 0px 5px 5px 5px;
+  color: #0879FA;
+  text-decoration: none;
+  font-size: 0.9rem;;
+}
+
+.signup_billing_section_icon{
+  margin: 0px 5px 5px 5px;
+  color: #0879FA;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.signup_contact_section_icon{
+  margin: 0px 5px 3px 5px;
+  color: #0879FA;
+  text-decoration: none;
+  font-size: 0.9rem;;
+}
+
+.signup_billing_address_section_icon{
+  margin: 0px 5px 5px 5px;
+  color: #0879FA;
+  text-decoration: none;
+  font-size: 0.9rem;;
+}
+
+.signup_login_section_icon{
+  margin: 0px 5px 5px 5px;
+  color: #0879FA;
+  text-decoration: none;
+  font-size: 0.9rem;;
+}
+
+.home_section_icon{
+  margin: 0px 5px 5px 5px;
+  color: #0879FA;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.home_shopping_section_cart_icon{
+  margin: 0px 5px 5px 5px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.home_shopping_section_quote_icon{
+  margin: 0px 5px 5px 5px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.home_license_section_icon{
+  margin: 0px 5px 5px 5px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.home_account_section_icon{
+  margin: 0px 5px 5px 5px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.home_invoice_section_icon{
+  margin: 0px 5px 5px 5px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.breadcrumb_container > nav {
+  padding: 0px !important;
+  margin: 0px!important;
+}
+
+.breadcrumb_dashboard > ol {
+  margin: 0px !important;
+}
+
+.modify_profile_icon{
+  margin: 0px 5px 5px 5px;
+  color: #0879FA;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.change_password_icon{
+  margin: 0px 5px 5px 5px;
+  color: #0879FA;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.logout_icon{
+  margin: 4px 5px 5px 5px;
+  color: #0879FA;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.modify_profile{
+  color: #0879FA;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.change_password{
+  color: #0879FA;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.logout{
+  color: #0879FA;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.home_license_section_inner_icon{
+  margin: 0px 5px 5px 5px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.license_summary_text{
+  color: #0879FA;
+  font-size: 0.95rem;
+}
+
+.invoice_summary_text{
+  color: #0879FA;
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+.order_summary_text{
+  color: #0879FA;
+  font-size: 0.95rem;
+}
+
+.order_subs_text{
+  color: #0879FA;
+  font-size: 0.95rem;
+  margin: 0px 0px 0px 10px;
+}
+
+.order_cart_section_icon{
+  margin: 0px 5px 5px 5px;
+  color: #0879FA;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.order_minus_icon{
+  margin: 6px 5px 5px 5px;
+  color: #0879FA;
+  text-decoration: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.order_plus_icon{
+  margin: 6px 5px 5px 5px;
+  color: #0879FA;
+  text-decoration: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.order_pricing_section_icon{
+  margin: 4px 10px 5px 5px;
+  color: #58A847;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.order_table_form_group_col .form-group input {
+  padding: 5px;
+  width: 50px;
+  height: 25px;
+}
+
+.order_table_form_group_col{
+  text-align: center;
+}
+
+.order_table_form_group_col .form-group {
+  margin: 0px;
+  padding: 0px 0px 0px 10px;
+}
+
+.order_license_section_inner_icon{
+  margin: 0px 5px 5px 5px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.customer_data_section_icon{
+  margin: 2px 5px 5px 5px;
+  color: #0879FA;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.customer_data_text{
+  color: #0879FA;
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+.change_password_section_icon{
+  margin: 2px 5px 5px 5px;
+  color: #0879FA;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+
+.payment_cart_section_icon{
+  margin: 3px 5px 5px 5px;
+  color: #0879FA;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.payment_billing_section_icon{
+  margin: 0px 5px 5px 5px;
+  color: #0879FA;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.payment_subscription_section_icon{
+  margin: 3px 5px 5px 5px;
+  color: #58A847;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.payment_modify_billing_section_icon{
+  margin: 0px 5px 5px 5px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.payment_card_section_icon{
+  margin: 3px 5px 5px 5px;
+  color: #0879FA;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.payment_subscription_info_text{
+  font-size: 0.9rem;
+}
+
+.payment_accordion_header{
+  padding: 10px 8px;
+  border-bottom: none;
+  background-color: #F7F7F7;
+}
+
+.quote_section_icon{
+  margin: 2px 5px 5px 5px;
+  color: #0879FA;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.admin_section_icon{
+  margin: 0px 5px 5px 5px;
+  color: #0879FA;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.show_licenses_icon{
+  margin: 0px 5px 5px 5px;
+  color: #58A847;
+  text-decoration: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.admin_licenses_section_icon{
+  margin: 0px 5px 5px 5px;
+  color: #0879FA;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.admin_logout_icon{
+  cursor: pointer;
+  margin: 5px 5px 5px 5px;
+  color: #0879FA;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.admin_licenses_section_text{
+  color: #0879FA;
+  font-size: 0.95rem;
+}
+
+#column-type_of_organization{
+  text-align: center !important;
+}
+
+#column-license_created_on{
+  text-align: center !important;
+}
+
+#column-type_of_discount{
+  text-align: center !important;
+}
+
+#column-license_number{
+  text-align: center !important;
+}
+
+#column-first_name{
+  text-align: center !important;
+}
+
+#column-last_name{
+  text-align: center !important;
+}
+
+#column-license_type{
+  text-align: center !important;
+}
+
+#column-expires_on{
+  text-align: center !important;
+}
+
+/* STRIPE PAYMENTS CSS  */
+
+.form-btn {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.StripeElement {
+  width: 500px;
+  background-color: white;
+  height: 40px;
+  padding: 10px 12px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
