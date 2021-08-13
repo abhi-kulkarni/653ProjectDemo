@@ -38,7 +38,7 @@ from keras.callbacks import TensorBoard
 #     DEBUG = (env("ADVERSARIAL_ATTACKS_DEBUG", 'True') == 'True')
 #     BASE_URL = env("ADVERSARIAL_ATTACKS_BASE_URL", "https://adversarial-attacks.herokuapp.com/")
 
-app = Flask(__name__, static_folder="react_app/build/static", template_folder="react_app/build")
+app = Flask(__name__)
 
 # app.config.from_object(Config())
 
