@@ -31,7 +31,6 @@ from keras.callbacks import TensorBoard
 
 env = os.environ.get
 
-
 class Config:
     LOCALE = env("ADVERSARIAL_ATTACKS_LOCALE", 'en_US.utf8')
     SECRET_KEY = env("ADVERSARIAL_ATTACKS_SECRET_KEY",
