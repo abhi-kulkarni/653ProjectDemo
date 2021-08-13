@@ -46,9 +46,8 @@ cors = CORS(app, allow_headers=[
     "Content-Type", "Authorization", "Access-Control-Allow-Credentials", "withCredentials"],
             supports_credentials=True, resources={r"/*": {"origins": "*"}})
 
-@app.route("/")
+@app.route("/", methods=["GET"])
 def index():
-    print('HELLO')
     return flask.jsonify({'ok': True, 'msg': 'HELLO WORLD ...!'})
     # return render_template('index.html')
 
