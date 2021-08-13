@@ -104,10 +104,10 @@ celerybeat.pid
 # Extra files
 .malimg_dataset
 malimg_dataset/
-mware_inputs/
-.mware_inputs/
-.MWARE_MODEL
-MWARE_MODEL/
+# mware_inputs/
+# .mware_inputs/
+# .MWARE_MODEL
+# MWARE_MODEL/
 .logs
 logs/
 
