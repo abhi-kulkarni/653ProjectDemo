@@ -36,9 +36,9 @@ class Config:
     SECRET_KEY = env("ADVERSARIAL_ATTACKS_SECRET_KEY",
                      "\xa9\x01\xd2\xc7\x97U\xe7ijo\x1c\xc8\xd8'\x9b-\xf3\xad\x02\x8e\xd2\x16\xc4u\xbfN+')\xfb\x8e\x9a")
     DEBUG = (env("ADVERSARIAL_ATTACKS_DEBUG", 'True') == 'True')
-    BASE_URL = env("ADVERSARIAL_ATTACKS_BASE_URL", "")
+    BASE_URL = env("ADVERSARIAL_ATTACKS_BASE_URL", "https://adversarial-attacks.herokuapp.com/")
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder="react_app/build/static", template_folder="build")
 
 app.config.from_object(Config())
 
