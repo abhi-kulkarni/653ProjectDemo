@@ -28,6 +28,7 @@ from keras.models import Sequential, Input, Model, load_model
 from keras.layers import Conv2D, MaxPooling2D, Dense, Dropout, Flatten, Activation, MaxPooling2D
 from keras.utils.np_utils import to_categorical
 from keras.callbacks import TensorBoard
+import logging
 
 # env = os.environ.get
 
@@ -283,6 +284,10 @@ def attacks():
 
     return flask.jsonify(ok=True, msg=msg, attacks_dict=attacks_dict, error='')
 
+if __name__ != '__main__':
+    gunicorn_logger = logging.getLogger('gunicorn.error')
+    app.logger.handlers = gunicorn_logger.handlers
+    app.logger.setLevel(gunicorn_logger.level)
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", threaded=True, port=5000)
