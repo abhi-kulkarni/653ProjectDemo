@@ -51,7 +51,7 @@ def index():
     return render_template('index.html')
 
 @app.route("/api/get_data/", methods=["GET", "POST"])
-def index():
+def get_data():
     msg = ''
     return flask.jsonify(ok=True, msg=msg, error='')
 
