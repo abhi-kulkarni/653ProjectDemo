@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, send_from_directory
 import flask
 from flask_cors import CORS
 import json
@@ -48,10 +48,11 @@ cors = CORS(app, allow_headers=[
 
 @app.route("/")
 def index():
+    print("Welcome")
     return render_template('index.html')
 
 @app.route("/api/get_data/", methods=["GET", "POST"])
-def index():
+def get_data():
     msg = ''
     return flask.jsonify(ok=True, msg=msg, error='')
 
