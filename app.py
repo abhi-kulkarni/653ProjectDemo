@@ -38,7 +38,7 @@ class Config:
     DEBUG = (env("ADVERSARIAL_ATTACKS_DEBUG", 'True') == 'True')
     BASE_URL = env("ADVERSARIAL_ATTACKS_BASE_URL", "https://adversarial-attacks.herokuapp.com/")
 
-app = Flask(__name__, static_folder="react_app/build/static", template_folder="build")
+app = Flask(__name__, static_folder="react_app/build/static", template_folder="react_app/build")
 
 app.config.from_object(Config())
 
@@ -46,6 +46,9 @@ cors = CORS(app, allow_headers=[
     "Content-Type", "Authorization", "Access-Control-Allow-Credentials", "withCredentials"],
             supports_credentials=True, resources={r"/*": {"origins": "*"}})
 
+@app.route("/")
+def index():
+    return render_template('index.html')
 
 @app.route("/api/get_data/", methods=["GET", "POST"])
 def index():
