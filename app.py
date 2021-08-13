@@ -48,7 +48,6 @@ cors = CORS(app, allow_headers=[
 
 @app.route("/")
 def index():
-    print("Welcome")
     return render_template('index.html')
 
 @app.route("/api/get_data/", methods=["GET", "POST"])
