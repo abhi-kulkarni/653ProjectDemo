@@ -29,18 +29,18 @@ from keras.layers import Conv2D, MaxPooling2D, Dense, Dropout, Flatten, Activati
 from keras.utils.np_utils import to_categorical
 from keras.callbacks import TensorBoard
 
-env = os.environ.get
+# env = os.environ.get
 
-class Config:
-    LOCALE = env("ADVERSARIAL_ATTACKS_LOCALE", 'en_US.utf8')
-    SECRET_KEY = env("ADVERSARIAL_ATTACKS_SECRET_KEY",
-                     "\xa9\x01\xd2\xc7\x97U\xe7ijo\x1c\xc8\xd8'\x9b-\xf3\xad\x02\x8e\xd2\x16\xc4u\xbfN+')\xfb\x8e\x9a")
-    DEBUG = (env("ADVERSARIAL_ATTACKS_DEBUG", 'True') == 'True')
-    BASE_URL = env("ADVERSARIAL_ATTACKS_BASE_URL", "https://adversarial-attacks.herokuapp.com/")
+# class Config:
+#     LOCALE = env("ADVERSARIAL_ATTACKS_LOCALE", 'en_US.utf8')
+#     SECRET_KEY = env("ADVERSARIAL_ATTACKS_SECRET_KEY",
+#                      "\xa9\x01\xd2\xc7\x97U\xe7ijo\x1c\xc8\xd8'\x9b-\xf3\xad\x02\x8e\xd2\x16\xc4u\xbfN+')\xfb\x8e\x9a")
+#     DEBUG = (env("ADVERSARIAL_ATTACKS_DEBUG", 'True') == 'True')
+#     BASE_URL = env("ADVERSARIAL_ATTACKS_BASE_URL", "https://adversarial-attacks.herokuapp.com/")
 
 app = Flask(__name__, static_folder="react_app/build/static", template_folder="react_app/build")
 
-app.config.from_object(Config())
+# app.config.from_object(Config())
 
 cors = CORS(app, allow_headers=[
     "Content-Type", "Authorization", "Access-Control-Allow-Credentials", "withCredentials"],
